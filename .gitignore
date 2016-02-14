@@ -1,0 +1,7 @@
+.DS_Store
+.*~
+Pods
+InstafeedReader.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+InstafeedReader.xcodeproj/project.xcworkspace/xcuserdata/
+InstafeedReader.xcodeproj/xcuserdata/
+InstafeedReader.xcworkspace/

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="waK-WJ-DHN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feed View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="FeedViewController" customModule="InstafeedReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-f2-CDs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="3" minimumInteritemSpacing="3" id="bgy-YN-0cK">
+                                    <size key="itemSize" width="175" height="162"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="A3h-sp-STB" customClass="CollectionViewCell" customModule="InstafeedReader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="175" height="162"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="175" height="162"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A5m-OA-T0N">
+                                                    <rect key="frame" x="0.0" y="0.0" width="175" height="162"/>
+                                                    <accessibility key="accessibilityConfiguration" label="ImageCell">
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="PiO-Xr-XQQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="175" height="162"/>
+                                                    <accessibility key="accessibilityConfiguration" label="VideoCell">
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="A5m-OA-T0N" firstAttribute="centerX" secondItem="A3h-sp-STB" secondAttribute="centerX" id="EcP-6s-6Cq"/>
+                                            <constraint firstItem="PiO-Xr-XQQ" firstAttribute="width" secondItem="A5m-OA-T0N" secondAttribute="width" id="K8N-Zt-ZkG"/>
+                                            <constraint firstItem="A5m-OA-T0N" firstAttribute="height" secondItem="A3h-sp-STB" secondAttribute="height" id="YxD-zq-06F"/>
+                                            <constraint firstItem="PiO-Xr-XQQ" firstAttribute="height" secondItem="A5m-OA-T0N" secondAttribute="height" id="bap-wM-FcR"/>
+                                            <constraint firstItem="PiO-Xr-XQQ" firstAttribute="centerY" secondItem="A5m-OA-T0N" secondAttribute="centerY" id="d09-e6-hYi"/>
+                                            <constraint firstItem="PiO-Xr-XQQ" firstAttribute="centerX" secondItem="A5m-OA-T0N" secondAttribute="centerX" id="dEy-kq-cgZ"/>
+                                            <constraint firstItem="A5m-OA-T0N" firstAttribute="centerY" secondItem="A3h-sp-STB" secondAttribute="centerY" id="ec9-qa-ZVc"/>
+                                            <constraint firstItem="A5m-OA-T0N" firstAttribute="width" secondItem="A3h-sp-STB" secondAttribute="width" id="m2O-vJ-eGw"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="A5m-OA-T0N" id="gwF-H9-xT3"/>
+                                            <outlet property="videoOverlay" destination="PiO-Xr-XQQ" id="MRf-wE-L04"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="1O9-DR-GNc"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="KKj-Vk-7YS"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="MainView">
+                            <accessibilityTraits key="traits" none="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="fpU-f2-CDs" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="1vJ-U1-ryE"/>
+                            <constraint firstItem="fpU-f2-CDs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6gS-Zc-Mbe"/>
+                            <constraint firstItem="fpU-f2-CDs" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="Alq-gI-feJ"/>
+                            <constraint firstItem="fpU-f2-CDs" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" id="fhJ-0R-51y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="t4O-hr-ajn">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="hdi-ai-zTC">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="WwK-Wx-DG2" kind="unwind" unwindAction="logout:" id="BTv-5N-ltZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="collectionView" destination="fpU-f2-CDs" id="ZcB-fR-Pw6"/>
+                        <segue destination="Dez-oF-POz" kind="show" identifier="ShowImage" id="aQz-WA-3tj"/>
+                        <segue destination="YUe-Dk-zPe" kind="show" identifier="ShowVideo" id="bBh-sB-QWN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <exit id="WwK-Wx-DG2" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1536.5" y="258.5"/>
+        </scene>
+        <!--Image Item View Controller-->
+        <scene sceneID="avd-9w-bBB">
+            <objects>
+                <viewController id="Dez-oF-POz" customClass="ImageItemViewController" customModule="InstafeedReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="voh-40-1t9"/>
+                        <viewControllerLayoutGuide type="bottom" id="eBH-jE-k2Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nac-uC-gb2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sFR-Ln-33R">
+                                <rect key="frame" x="-4" y="64" width="383" height="603"/>
+                                <accessibility key="accessibilityConfiguration" label="ImageView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="sFR-Ln-33R" secondAttribute="trailing" constant="-20" id="gVp-fp-EbM"/>
+                            <constraint firstItem="eBH-jE-k2Z" firstAttribute="top" secondItem="sFR-Ln-33R" secondAttribute="bottom" id="j7B-Tm-EOf"/>
+                            <constraint firstItem="sFR-Ln-33R" firstAttribute="leading" secondItem="Nac-uC-gb2" secondAttribute="leadingMargin" constant="-20" id="kd6-b9-VNl"/>
+                            <constraint firstItem="sFR-Ln-33R" firstAttribute="top" secondItem="voh-40-1t9" secondAttribute="bottom" id="xbh-84-6dD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mb4-Ad-rea"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="sFR-Ln-33R" id="pD9-gK-a0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaT-lm-2lE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2063.5" y="-121.5"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="nKR-1g-cdU">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="YUe-Dk-zPe" customClass="VideoItemViewController" customModule="InstafeedReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAd-9k-xLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2063.5" y="673.5"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="uu3-8O-WVN">
+            <objects>
+                <viewController id="nUj-0a-dV7" customClass="LoginViewController" customModule="InstafeedReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mcl-Uo-0ZC"/>
+                        <viewControllerLayoutGuide type="bottom" id="b6g-Hr-bcd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WyE-uY-Xa8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zo8-I4-91N">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="nUj-0a-dV7" id="33D-JE-Ss0"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b6g-Hr-bcd" firstAttribute="top" secondItem="zo8-I4-91N" secondAttribute="bottom" id="AgY-Pn-ihI"/>
+                            <constraint firstAttribute="trailing" secondItem="zo8-I4-91N" secondAttribute="trailing" id="W7b-l4-y39"/>
+                            <constraint firstItem="zo8-I4-91N" firstAttribute="top" secondItem="mcl-Uo-0ZC" secondAttribute="bottom" constant="-64" id="kkV-49-cKI"/>
+                            <constraint firstItem="zo8-I4-91N" firstAttribute="leading" secondItem="WyE-uY-Xa8" secondAttribute="leading" id="sFO-5f-h9D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="4Zc-Pq-YgW"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="webView" destination="zo8-I4-91N" id="QOX-7Q-SOi"/>
+                        <segue destination="vXZ-lx-hvc" kind="show" identifier="Login" id="HSa-RC-q7Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7eh-lc-hWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001.5" y="258.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vv9-pz-1Wc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="waK-WJ-DHN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wpg-O6-pjw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nUj-0a-dV7" kind="relationship" relationship="rootViewController" id="tOz-cc-WGe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nu6-eA-37f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479.5" y="258.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play_button.png" width="400" height="400"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+</document>

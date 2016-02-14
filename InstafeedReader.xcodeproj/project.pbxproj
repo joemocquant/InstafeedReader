@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018D1B8B1C246CD2001E8770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E927F31B4B77B9009BAA03 /* AppDelegate.swift */; };
+		018D1B8C1C246CD7001E8770 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E927F81B4B77B9009BAA03 /* FeedViewController.swift */; };
+		018D1B8D1C246CDA001E8770 /* ImageItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197F6AF1BFBA3DA00BCBFE2 /* ImageItemViewController.swift */; };
+		018D1B8E1C246CDF001E8770 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197F6AD1BFB874800BCBFE2 /* CollectionViewCell.swift */; };
+		018D1B8F1C246CE2001E8770 /* FeedViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6A2611BFCBDC500B4FC97 /* FeedViewController+Layout.swift */; };
+		018D1B901C246CE6001E8770 /* InstagramMedia+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E928191B4B7C09009BAA03 /* InstagramMedia+Description.swift */; };
+		018D1B911C246CE9001E8770 /* ItemsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6A2651BFCF2F300B4FC97 /* ItemsCollection.swift */; };
+		01DA21661C70C84B007C9BEF /* instafeedReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA21651C70C84B007C9BEF /* instafeedReaderUITests.swift */; };
+		01E51D341C24CA6A005ED342 /* VideoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E51D331C24CA6A005ED342 /* VideoItemViewController.swift */; };
+		01F6A2681BFD109600B4FC97 /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6A2671BFD109600B4FC97 /* play_button.png */; };
+		01FBFC841C6FC6F5003432A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBFC831C6FC6F5003432A6 /* LoginViewController.swift */; };
+		11ECA68C9D510005138EAEBE /* Pods_InstafeedReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE4B7DB115DB8AB52519CE2 /* Pods_InstafeedReader.framework */; };
+		3DBB706472F8E210EBC8AC8E /* Pods_InstafeedReaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575B3BD89E1ABB12CFC2755 /* Pods_InstafeedReaderUITests.framework */; };
+		A7E927FC1B4B77B9009BAA03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E927FA1B4B77B9009BAA03 /* Main.storyboard */; };
+		A7E927FE1B4B77B9009BAA03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E927FD1B4B77B9009BAA03 /* Images.xcassets */; };
+		A7E928011B4B77B9009BAA03 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E927FF1B4B77B9009BAA03 /* LaunchScreen.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01327FA71BFE925900E4DC14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7E927E61B4B77B9009BAA03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7E927ED1B4B77B9009BAA03;
+			remoteInfo = instaharrys;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01327FA21BFE925900E4DC14 /* InstafeedReader.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstafeedReader.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01327FA61BFE925900E4DC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0197F6AD1BFB874800BCBFE2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		0197F6AF1BFBA3DA00BCBFE2 /* ImageItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageItemViewController.swift; sourceTree = "<group>"; };
+		01DA21651C70C84B007C9BEF /* instafeedReaderUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = instafeedReaderUITests.swift; path = InstafeedReaderUITests/instafeedReaderUITests.swift; sourceTree = SOURCE_ROOT; };
+		01E51D331C24CA6A005ED342 /* VideoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoItemViewController.swift; sourceTree = "<group>"; };
+		01F6A2611BFCBDC500B4FC97 /* FeedViewController+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewController+Layout.swift"; sourceTree = "<group>"; };
+		01F6A2651BFCF2F300B4FC97 /* ItemsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsCollection.swift; sourceTree = "<group>"; };
+		01F6A2671BFD109600B4FC97 /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button.png; sourceTree = "<group>"; };
+		01FBFC831C6FC6F5003432A6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7575B3BD89E1ABB12CFC2755 /* Pods_InstafeedReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstafeedReaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB2E7F316FB3EBC3536AF4F /* Pods-InstafeedReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstafeedReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstafeedReader/Pods-InstafeedReader.debug.xcconfig"; sourceTree = "<group>"; };
+		8CE4B7DB115DB8AB52519CE2 /* Pods_InstafeedReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstafeedReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E927EE1B4B77B9009BAA03 /* InstafeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstafeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E927F21B4B77B9009BAA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7E927F31B4B77B9009BAA03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7E927F81B4B77B9009BAA03 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A7E927FB1B4B77B9009BAA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7E927FD1B4B77B9009BAA03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A7E928001B4B77B9009BAA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A7E928191B4B7C09009BAA03 /* InstagramMedia+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InstagramMedia+Description.swift"; sourceTree = "<group>"; };
+		B5455DB2069FC90A76D7418C /* Pods-InstafeedReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstafeedReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstafeedReader/Pods-InstafeedReader.release.xcconfig"; sourceTree = "<group>"; };
+		C13AB78967056E888A37E084 /* Pods-InstafeedReaderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstafeedReaderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstafeedReaderUITests/Pods-InstafeedReaderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D3F5962729CA5D0B011E0E12 /* Pods-InstafeedReaderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstafeedReaderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstafeedReaderUITests/Pods-InstafeedReaderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01327F9F1BFE925900E4DC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBB706472F8E210EBC8AC8E /* Pods_InstafeedReaderUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E927EB1B4B77B9009BAA03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11ECA68C9D510005138EAEBE /* Pods_InstafeedReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01327FA31BFE925900E4DC14 /* InstafeedReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01DA21651C70C84B007C9BEF /* instafeedReaderUITests.swift */,
+				01327FA61BFE925900E4DC14 /* Info.plist */,
+			);
+			path = InstafeedReaderUITests;
+			sourceTree = "<group>";
+		};
+		0178E1721C6F97B600BF14AD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01F6A2611BFCBDC500B4FC97 /* FeedViewController+Layout.swift */,
+				A7E928191B4B7C09009BAA03 /* InstagramMedia+Description.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		0197F6AC1BFB86EB00BCBFE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0197F6AD1BFB874800BCBFE2 /* CollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		01F6A2601BFCBD3B00B4FC97 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01FBFC831C6FC6F5003432A6 /* LoginViewController.swift */,
+				A7E927F81B4B77B9009BAA03 /* FeedViewController.swift */,
+				0197F6AF1BFBA3DA00BCBFE2 /* ImageItemViewController.swift */,
+				01E51D331C24CA6A005ED342 /* VideoItemViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4075BE18CF3AEE19FAF9B086 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CE4B7DB115DB8AB52519CE2 /* Pods_InstafeedReader.framework */,
+				7575B3BD89E1ABB12CFC2755 /* Pods_InstafeedReaderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7E927E51B4B77B9009BAA03 = {
+			isa = PBXGroup;
+			children = (
+				A7E927F01B4B77B9009BAA03 /* InstafeedReader */,
+				01327FA31BFE925900E4DC14 /* InstafeedReaderUITests */,
+				A7E927EF1B4B77B9009BAA03 /* Products */,
+				B5844DEA05BAAE464D46BAC8 /* Pods */,
+				4075BE18CF3AEE19FAF9B086 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7E927EF1B4B77B9009BAA03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7E927EE1B4B77B9009BAA03 /* InstafeedReader.app */,
+				01327FA21BFE925900E4DC14 /* InstafeedReader.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7E927F01B4B77B9009BAA03 /* InstafeedReader */ = {
+			isa = PBXGroup;
+			children = (
+				A7E927F31B4B77B9009BAA03 /* AppDelegate.swift */,
+				0178E1721C6F97B600BF14AD /* Extensions */,
+				01F6A2601BFCBD3B00B4FC97 /* Controllers */,
+				0197F6AC1BFB86EB00BCBFE2 /* Views */,
+				A7E928181B4B7BEB009BAA03 /* Model */,
+				A7E927FA1B4B77B9009BAA03 /* Main.storyboard */,
+				A7E927FD1B4B77B9009BAA03 /* Images.xcassets */,
+				A7E927FF1B4B77B9009BAA03 /* LaunchScreen.xib */,
+				A7E927F11B4B77B9009BAA03 /* Supporting Files */,
+			);
+			path = InstafeedReader;
+			sourceTree = "<group>";
+		};
+		A7E927F11B4B77B9009BAA03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01F6A2671BFD109600B4FC97 /* play_button.png */,
+				A7E927F21B4B77B9009BAA03 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7E928181B4B7BEB009BAA03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01F6A2651BFCF2F300B4FC97 /* ItemsCollection.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B5844DEA05BAAE464D46BAC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BB2E7F316FB3EBC3536AF4F /* Pods-InstafeedReader.debug.xcconfig */,
+				B5455DB2069FC90A76D7418C /* Pods-InstafeedReader.release.xcconfig */,
+				D3F5962729CA5D0B011E0E12 /* Pods-InstafeedReaderUITests.debug.xcconfig */,
+				C13AB78967056E888A37E084 /* Pods-InstafeedReaderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01327FA11BFE925900E4DC14 /* InstafeedReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01327FA91BFE925900E4DC14 /* Build configuration list for PBXNativeTarget "InstafeedReaderUITests" */;
+			buildPhases = (
+				5E7772DBA45C053EEA357B08 /* Check Pods Manifest.lock */,
+				01327F9E1BFE925900E4DC14 /* Sources */,
+				01327F9F1BFE925900E4DC14 /* Frameworks */,
+				01327FA01BFE925900E4DC14 /* Resources */,
+				1585ADA4D172B1D528EE69BB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01327FA81BFE925900E4DC14 /* PBXTargetDependency */,
+			);
+			name = InstafeedReaderUITests;
+			productName = instaharrysUITests;
+			productReference = 01327FA21BFE925900E4DC14 /* InstafeedReader.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A7E927ED1B4B77B9009BAA03 /* InstafeedReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7E928101B4B77B9009BAA03 /* Build configuration list for PBXNativeTarget "InstafeedReader" */;
+			buildPhases = (
+				EFE803167D446AA17A29BA15 /* Check Pods Manifest.lock */,
+				A7E927EA1B4B77B9009BAA03 /* Sources */,
+				A7E927EB1B4B77B9009BAA03 /* Frameworks */,
+				A7E927EC1B4B77B9009BAA03 /* Resources */,
+				D228BE47F908FEC7B3C6A8E7 /* Copy Pods Resources */,
+				0EF68B41E9AB9EFA34B7D620 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstafeedReader;
+			productName = instaharrys;
+			productReference = A7E927EE1B4B77B9009BAA03 /* InstafeedReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7E927E61B4B77B9009BAA03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = InstafeedReader;
+				TargetAttributes = {
+					01327FA11BFE925900E4DC14 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 28G9YT943F;
+						TestTargetID = A7E927ED1B4B77B9009BAA03;
+					};
+					A7E927ED1B4B77B9009BAA03 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = A7E927E91B4B77B9009BAA03 /* Build configuration list for PBXProject "InstafeedReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7E927E51B4B77B9009BAA03;
+			productRefGroup = A7E927EF1B4B77B9009BAA03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7E927ED1B4B77B9009BAA03 /* InstafeedReader */,
+				01327FA11BFE925900E4DC14 /* InstafeedReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01327FA01BFE925900E4DC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E927EC1B4B77B9009BAA03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F6A2681BFD109600B4FC97 /* play_button.png in Resources */,
+				A7E927FC1B4B77B9009BAA03 /* Main.storyboard in Resources */,
+				A7E928011B4B77B9009BAA03 /* LaunchScreen.xib in Resources */,
+				A7E927FE1B4B77B9009BAA03 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EF68B41E9AB9EFA34B7D620 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstafeedReader/Pods-InstafeedReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1585ADA4D172B1D528EE69BB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstafeedReaderUITests/Pods-InstafeedReaderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E7772DBA45C053EEA357B08 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D228BE47F908FEC7B3C6A8E7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstafeedReader/Pods-InstafeedReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFE803167D446AA17A29BA15 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01327F9E1BFE925900E4DC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01DA21661C70C84B007C9BEF /* instafeedReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E927EA1B4B77B9009BAA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01FBFC841C6FC6F5003432A6 /* LoginViewController.swift in Sources */,
+				018D1B8C1C246CD7001E8770 /* FeedViewController.swift in Sources */,
+				018D1B8B1C246CD2001E8770 /* AppDelegate.swift in Sources */,
+				018D1B8F1C246CE2001E8770 /* FeedViewController+Layout.swift in Sources */,
+				018D1B8E1C246CDF001E8770 /* CollectionViewCell.swift in Sources */,
+				018D1B8D1C246CDA001E8770 /* ImageItemViewController.swift in Sources */,
+				01E51D341C24CA6A005ED342 /* VideoItemViewController.swift in Sources */,
+				018D1B911C246CE9001E8770 /* ItemsCollection.swift in Sources */,
+				018D1B901C246CE6001E8770 /* InstagramMedia+Description.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01327FA81BFE925900E4DC14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7E927ED1B4B77B9009BAA03 /* InstafeedReader */;
+			targetProxy = 01327FA71BFE925900E4DC14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7E927FA1B4B77B9009BAA03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7E927FB1B4B77B9009BAA03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7E927FF1B4B77B9009BAA03 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7E928001B4B77B9009BAA03 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01327FAA1BFE925900E4DC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3F5962729CA5D0B011E0E12 /* Pods-InstafeedReaderUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = InstafeedReaderUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InstafeedReaderUITests;
+				PRODUCT_NAME = InstafeedReader;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = InstafeedReader;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		01327FAB1BFE925900E4DC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C13AB78967056E888A37E084 /* Pods-InstafeedReaderUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = InstafeedReaderUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InstafeedReaderUITests;
+				PRODUCT_NAME = InstafeedReader;
+				TEST_TARGET_NAME = InstafeedReader;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		A7E9280E1B4B77B9009BAA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = InstafeedReader;
+				PRODUCT_NAME = InstafeedReader;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "InstafeedReader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7E9280F1B4B77B9009BAA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = InstafeedReader;
+				PRODUCT_NAME = InstafeedReader;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "InstafeedReader-Bridging-Header.h";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7E928111B4B77B9009BAA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB2E7F316FB3EBC3536AF4F /* Pods-InstafeedReader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = NO;
+				INFOPLIST_FILE = InstafeedReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InstafeedReader;
+				PRODUCT_NAME = InstafeedReader;
+				SWIFT_OBJC_BRIDGING_HEADER = "InstafeedReader-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		A7E928121B4B77B9009BAA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5455DB2069FC90A76D7418C /* Pods-InstafeedReader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = NO;
+				INFOPLIST_FILE = InstafeedReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InstafeedReader;
+				PRODUCT_NAME = InstafeedReader;
+				SWIFT_OBJC_BRIDGING_HEADER = "InstafeedReader-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01327FA91BFE925900E4DC14 /* Build configuration list for PBXNativeTarget "InstafeedReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01327FAA1BFE925900E4DC14 /* Debug */,
+				01327FAB1BFE925900E4DC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E927E91B4B77B9009BAA03 /* Build configuration list for PBXProject "InstafeedReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E9280E1B4B77B9009BAA03 /* Debug */,
+				A7E9280F1B4B77B9009BAA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E928101B4B77B9009BAA03 /* Build configuration list for PBXNativeTarget "InstafeedReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E928111B4B77B9009BAA03 /* Debug */,
+				A7E928121B4B77B9009BAA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7E927E61B4B77B9009BAA03 /* Project object */;
+}
